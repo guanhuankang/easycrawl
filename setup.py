@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="easyCrawl",
-    version="1.0.1",
+    version="1.0.2",
     author="Lotso",
     author_email="2659814334@qq.com",
     description="A simple package for crawling data from URLs.",
