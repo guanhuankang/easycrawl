@@ -22,8 +22,8 @@ def thread_main(handler, queue, thread_id, n_threads):
             while not __thread_set_and_check(True, thread_id, n_threads) and queue.size()<=0:
                 time.sleep(3)
             if __thread_set_and_check(True, thread_id, n_threads):
-                print(thread_id, "I am sleeping (never die! hahah)", flush=True)
-                time.sleep(1) ## return 
+                print(thread_id, "end", flush=True)
+                return 
             __thread_set_and_check(False, thread_id, n_threads)
         else:
             handler(hash, url, queue)
